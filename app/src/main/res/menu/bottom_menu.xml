@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_airplane"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_local_airport_24"
+        android:title="비행기"></item>
+    <item
+        android:id="@+id/action_cloud"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_cloud_upload_24"
+        android:title="클라우드"></item>
+    <item
+        android:id="@+id/action_favorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="favorite"></item>
+    <item
+        android:id="@+id/action_picture"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_collections_24"
+        android:title="컬렉션"></item>
+    <item
+        android:id="@+id/action_check"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_checkroom_24"
+        android:title="체크룸"></item>
+</menu>

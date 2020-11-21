@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_InitImg"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_init"
+                        android:text="+\n이번 달 사진을 추가해주세요!"
+                        android:textColor="@color/design_default_color_on_primary"
+                        android:textSize="10sp"
+                        app:backgroundTint="@color/teal_200" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+
+                        app:srcCompat="@drawable/img5" />
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+
+                        app:srcCompat="@drawable/img8" />
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img5" />
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/img1" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:columnWidth="90dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
